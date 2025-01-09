@@ -9,3 +9,33 @@ body {
 .title-girl {
     margin-top:-300px;
 }
+
+svg {
+    height: 16vh;
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+  }
+  body {
+    font-family: 'Noto Sans JP','NotoSansCJKjp','ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .container {
+    position: relative;
+  }
+  .box {
+    padding: 20px;
+    text-align: center;
+    background-color: #0bd;
+    height: 80vh;
+  }
+  h1{
+    color: #fff;
+    font-size: 48px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
