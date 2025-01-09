@@ -1,4 +1,11 @@
 body {
-    background-color: rgb(190, 223, 253);
+    
 }
 
+.title {
+    text-align: center;
+}
+
+.title-girl {
+    margin-top:-300px;
+}
