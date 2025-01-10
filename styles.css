@@ -7,35 +7,34 @@ body {
 }
 
 .title-girl {
-    margin-top:-300px;
+    margin-top: -300px;
+    margin-bottom: -400px;
+    z-index: 2;
 }
 
 svg {
-    height: 16vh;
+    margin-top:0;
+    height: 40vh;
       width: 100vw;
       position: absolute;
-      bottom: 0;
+      z-index: 1;
   }
+
   body {
     font-family: 'Noto Sans JP','NotoSansCJKjp','ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
   }
-  img{
-    width: 100%;
-    height: auto;
-  }
+ 
   .container {
     position: relative;
   }
+
   .box {
     padding: 20px;
     text-align: center;
     background-color: #0bd;
     height: 80vh;
   }
-  h1{
-    color: #fff;
-    font-size: 48px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+
+  .main {
+    margin-top:0;
   }

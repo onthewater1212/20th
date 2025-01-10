@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('#wave').wavify({
-    height: 60,
-    bones: 3,
-    amplitude: 40,
-    color: '#0bd',
-    speed: .25
+    height: 100,
+    bones: 10,//波の山と谷の数
+    amplitude: 20,//振幅
+    color: '#0f34ff',
+    speed: .25//速度
   });
 });
