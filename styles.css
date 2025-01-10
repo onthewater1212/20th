@@ -38,3 +38,20 @@ svg {
   .main {
     margin-top:0;
   }
+.interview {
+    margin-top: 40vh; /* waveセクションの高さ分だけマージンを追加 */
+    padding: 18vw; /* 内側の余白を追加 */
+    margin-left: 20px; /* 左側の外側余白を追加 */
+    margin-right: 20px; /* 右側の外側余白を追加 */
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    font-family: 'Zen Kaku Gothic New';
+    font-size: 16px;
+    color:#0f34ff;
+    line-height: 2;
+    margin-bottom: 50px;
+    font-weight: Medium;
+}
