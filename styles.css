@@ -16,6 +16,14 @@ body {
   position: relative;
 }
 
+.sub {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: auto;
+}
+
 .title {
     text-align: center;
 }
@@ -23,8 +31,9 @@ body {
 .title-girl {
     margin-top: -300px;
     margin-bottom: -400px;
-    z-index: 2;
+    z-index: 3;
     animation: moveUpDown 2s infinite ease-in-out;
+    position: relative;
 }
 
 @keyframes moveUpDown {
@@ -36,47 +45,26 @@ body {
   }
 }
 
-.sub {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: auto;
-}
-
 svg {
-    margin-top:0;
-    height: 100vh;
-      width: 100vw;
-      position: absolute;
-      z-index: 1;
+    margin-top:-100px;
+    height: 180vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
   }
  
-
-
-  .box {
-    padding: 20px;
-    text-align: center;
-    background-color: #0bd;
-    height: 80vh;
-  }
-
- 
-  .main {
-    margin-top:0;
-  }
 .interview {
-    margin-top: 40vh; /* waveセクションの高さ分だけマージンを追加 */
+    margin-top: 200vh; /* waveセクションの高さ分だけマージンを追加 */
     padding: 18vw; /* 内側の余白を追加 */
-    margin-left: 20px; /* 左側の外側余白を追加 */
-    margin-right: 20px; /* 右側の外側余白を追加 */
+    margin-left: 100px; /* 左側の外側余白を追加 */
+    margin-right: 100px; /* 右側の外側余白を追加 */
     position: relative;
     z-index: 2;
 }
 
 .content {
     font-family: 'Zen Kaku Gothic New';
-    font-size: 16px;
+    font-size: 20px;
     color:#2731AD;
     line-height: 2;
     margin-bottom: 50px;
