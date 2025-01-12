@@ -1,5 +1,19 @@
+
 body {
-    
+  font-family: 'Noto Sans JP','NotoSansCJKjp','ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
+  position: relative;
+  background-image: url('back-image.jpg'); /* 古い紙の画像 */
+  background-size: cover; /* 全体にフィットさせる */
+  background-repeat: no-repeat; /* 繰り返しを防ぐ */
+  background-position: center; /* 中央に配置 */
+  color: #3e3e3e; /* 紙に合う文字色 */
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  width: 100%;
+  position: relative;
 }
 
 .title {
@@ -10,23 +24,35 @@ body {
     margin-top: -300px;
     margin-bottom: -400px;
     z-index: 2;
+    animation: moveUpDown 2s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.sub {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: auto;
 }
 
 svg {
     margin-top:0;
-    height: 40vh;
+    height: 100vh;
       width: 100vw;
       position: absolute;
       z-index: 1;
   }
-
-  body {
-    font-family: 'Noto Sans JP','NotoSansCJKjp','ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
-  }
  
-  .container {
-    position: relative;
-  }
+
 
   .box {
     padding: 20px;
@@ -35,6 +61,7 @@ svg {
     height: 80vh;
   }
 
+ 
   .main {
     margin-top:0;
   }
@@ -50,8 +77,9 @@ svg {
 .content {
     font-family: 'Zen Kaku Gothic New';
     font-size: 16px;
-    color:#0f34ff;
+    color:#2731AD;
     line-height: 2;
     margin-bottom: 50px;
     font-weight: Medium;
 }
+
