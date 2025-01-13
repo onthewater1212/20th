@@ -47,14 +47,25 @@ body {
 
 svg {
     margin-top:-100px;
-    height: 180vh;
+    height: 150vh;
     width: 100vw;
     position: absolute;
     z-index: 1;
   }
+
+  .intro {
+     z-index: 4;
+     color: rgb( 253, 242, 208);
+     position: relative;
+     text-align: center;
+     margin-top: 50vh;
+     font-family: 'Zen Kaku Gothic New';
+     font-weight: Medium;
+     font-size: 20px;
+  } 
  
 .interview {
-    margin-top: 200vh; /* waveセクションの高さ分だけマージンを追加 */
+    margin-top: 50vh; /* waveセクションの高さ分だけマージンを追加 */
     padding: 18vw; /* 内側の余白を追加 */
     margin-left: 100px; /* 左側の外側余白を追加 */
     margin-right: 100px; /* 右側の外側余白を追加 */
