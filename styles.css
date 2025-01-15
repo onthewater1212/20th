@@ -66,19 +66,30 @@ svg {
  
 .interview {
     margin-top: 50vh; /* waveセクションの高さ分だけマージンを追加 */
-    padding: 18vw; /* 内側の余白を追加 */
+    padding: 20vw; /* 内側の余白を追加 */
     margin-left: 100px; /* 左側の外側余白を追加 */
     margin-right: 100px; /* 右側の外側余白を追加 */
     position: relative;
     z-index: 2;
 }
 
+.komidashi {
+  font-size: 30px;
+  color:#2731AD;
+  margin-top:100px;
+  font-weight: Medium;
+  margin-left: -50px;
+  margin-bottom: 100px;
+  margin-top: 250px;
+}
+
 .content {
     font-family: 'Zen Kaku Gothic New';
-    font-size: 20px;
+    font-size: 18px;
     color:#2731AD;
-    line-height: 2;
+    line-height: 2.5;
     margin-bottom: 50px;
     font-weight: Medium;
+  
 }
 
