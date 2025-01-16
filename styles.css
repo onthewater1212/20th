@@ -93,3 +93,10 @@ svg {
   
 }
 
+.pressure {
+  width: 85%; /* 幅を100%に設定、または任意のサイズに変更 */
+  height: auto; /* 高さを自動調整 */
+  margin-left: 3vw;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+}
