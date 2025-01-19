@@ -17,16 +17,16 @@ $(document).ready(function() {
 
 
 const images = [
-  "images/yacht1.png",
-  "images/yacht2.png",
-  "images/yacht3.png",
-  "images/yacht4.png",
-  "images/yacht5.png",
-  "images/yacht6.png",
-  "images/yacht7.png",
-  "images/yacht8.png",
-  "images/yacht9.png",
-  "images/yacht10.png",
+  "/images/yacht1.png",
+  "/images/yacht2.png",
+  "/images/yacht3.png",
+  "/images/yacht4.png",
+  "/images/yacht5.png",
+  "/images/yacht6.png",
+  "/images/yacht7.png",
+  "/images/yacht8.png",
+  "/images/yacht9.png",
+  "/images/yacht10.png",
 ];
 
 // 画像要素
