@@ -15,35 +15,18 @@ $(document).ready(function() {
   });
 });
 
-// フェードイン
-let fadeInTarget = document.querySelectorAll('.fade-in');
-window.addEventListener('scroll', () => {
-  for (let i = 0; i < fadeInTarget.length; i++){
-    const rect = fadeInTarget[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
-    if (scroll > offset - windowHeight + 150) {
-      fadeInTarget[i].classList.add('scroll-in');
-    }
-  }
-});
-
-
-Resources
-
 
 const images = [
-  "./images/yacht1.png",
-  "./images/yacht2.png",
-  "./images/yacht3.png",
-  "./images/yacht4.png",
-  "./images/yacht5.png",
-  "./images/yacht6.png",
-  "./images/yacht7.png",
-  "./images/yacht8.png",
-  "./images/yacht9.png",
-  "./images/yacht10.png",
+  "images/yacht1.png",
+  "images/yacht2.png",
+  "images/yacht3.png",
+  "images/yacht4.png",
+  "images/yacht5.png",
+  "images/yacht6.png",
+  "images/yacht7.png",
+  "images/yacht8.png",
+  "images/yacht9.png",
+  "images/yacht10.png",
 ];
 
 // 画像要素
