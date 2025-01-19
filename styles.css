@@ -1,5 +1,10 @@
+html {
+  width: 100%;
+  overflow-x: hidden; /* 横方向のはみ出しを非表示に */
+}
 
 body {
+  width: 100vw;
   font-family: 'Noto Sans JP','NotoSansCJKjp','ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
   position: relative;
   background-image: url('images/back-image.jpg'); /* 古い紙の画像 */
@@ -11,9 +16,47 @@ body {
   padding: 0;
 }
 
+
 .top {
-  width: 100%;
+  margin-top: 50px;
+  width: 100vw;
   position: relative;
+}
+
+.top img{
+  opacity: 0; /* 初期状態で非表示 */
+  transform: scale(0.5); /* 初期状態で小さく */
+  animation: zoomIn 1s ease-out forwards; /* アニメーション */
+}
+
+@keyframes zoomIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.5); /* 初期状態は小さく */
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.2); /* 一時的に拡大 */
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1); /* 最終的に元のサイズ */
+  }
+}
+
+/* 順番に表示するための遅延設定 */
+
+
+.title-girl {
+  animation-delay: 0.4s;
+}
+
+.sub {
+  animation-delay: 0.8s;
+}
+
+.title-moji {
+  animation-delay: 1.2s;
 }
 
 .sub {
@@ -22,6 +65,7 @@ body {
   right: 0;
   width: 300px;
   height: auto;
+  margin-right: 20px;
 }
 
 .title {
@@ -45,28 +89,67 @@ body {
   }
 }
 
-svg {
+.wave svg {
     margin-top:-100px;
-    height: 150vh;
-    width: 100vw;
+    height: 230vh;
+    width: 100%;
     position: absolute;
     z-index: 1;
   }
 
-  .intro {
-     z-index: 4;
-     color: rgb( 253, 242, 208);
-     position: relative;
-     text-align: center;
-     margin-top: 50vh;
-     font-family: 'Zen Kaku Gothic New';
-     font-weight: Medium;
-     font-size: 20px;
-  } 
+.wave-bottom svg  {
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  z-index: 1;
+}
+
+.intro {
+    z-index: 4;
+    color: rgb( 253, 242, 208);
+    position: relative;
+    text-align: center;
+    margin-top: 50vh;
+    font-family: 'Zen Kaku Gothic New';
+    font-weight: Medium;
+    font-size: 20px;
+} 
+
+.reason {
+  margin-bottom: 30vh;
+}
+
+.shoukaioya {
+  height:90vh;
+}
  
+.shoukai {
+  display: flex;
+  justify-content: center;
+  align-items: cener;
+  gap: 100px;
+}
+
+.circle {
+  width: 300px;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.wavegazou {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 .interview {
-    margin-top: 50vh; /* waveセクションの高さ分だけマージンを追加 */
-    padding: 20vw; /* 内側の余白を追加 */
+    padding-right: 25vw; /* 内側の余白を追加 */
+    padding-top: 20vw;
+    padding-left: 25vw;
+    margin-top: -60vh;
     margin-left: 100px; /* 左側の外側余白を追加 */
     margin-right: 100px; /* 右側の外側余白を追加 */
     position: relative;
@@ -83,6 +166,28 @@ svg {
   margin-top: 250px;
 }
 
+dl {
+  padding-bottom: 50px;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 18px;
+  color:#2731AD;
+  line-height: 2.5;
+}
+
+dt {
+  float: left;
+  clear: both;
+  text-align: left;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 100px;
+  text-align: left;
+  
+  
+}
+
 .content {
     font-family: 'Zen Kaku Gothic New';
     font-size: 18px;
@@ -93,6 +198,7 @@ svg {
   
 }
 
+
 .pressure {
   width: 85%; /* 幅を100%に設定、または任意のサイズに変更 */
   height: auto; /* 高さを自動調整 */
@@ -101,17 +207,23 @@ svg {
   margin-bottom: 15vh;
 }
 
+.balance {
+  width: 100%;
+  height: auto;
+}
+
 .section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80vh;
 }
 
 .animation-container {
-  margin-top: -35vh;
+  margin-top: -２０vh;
   margin-bottom: 20vh;
   position: relative;
-  width: 120%;
+  width: 100%;
   height: 80vh;
   position: relative;
 }

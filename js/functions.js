@@ -1,5 +1,12 @@
+window.onload = () => {
+  const images = document.querySelectorAll('.scroll-image');
+  images.forEach((img, index) => {
+      img.style.animationDelay = `${index * 0.5}s`; // 各画像が少しずつずれてアニメーション
+  });
+};
+
 $(document).ready(function() {
-    $('#wave').wavify({
+    $('#wave, #wave-bottom').wavify({
     height: 100,
     bones: 10,//波の山と谷の数
     amplitude: 20,//振幅
@@ -7,6 +14,24 @@ $(document).ready(function() {
     speed: .25//速度
   });
 });
+
+// フェードイン
+let fadeInTarget = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < fadeInTarget.length; i++){
+    const rect = fadeInTarget[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 150) {
+      fadeInTarget[i].classList.add('scroll-in');
+    }
+  }
+});
+
+
+Resources
+
 
 const images = [
   "images/yacht1.png",
